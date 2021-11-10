@@ -1,5 +1,5 @@
 {
-  "name": "jest-launchdarkly-mock",
+  "name": "jest-ld-mock",
   "version": "0.2.2",
   "description": "Easily unit test LaunchDarkly feature flagged components with jest",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && tsc",
-    "prep-dev": "yarn build && yarn --cwd example install && mkdir -p example/node_modules/jest-launchdarkly-mock && cp -r dist example/node_modules/jest-launchdarkly-mock && cp package.json example/node_modules/jest-launchdarkly-mock",
+    "prep-dev": "yarn build && yarn --cwd example install && mkdir -p example/node_modules/jest-ld-mock && cp -r dist example/node_modules/jest-ld-mock && cp package.json example/node_modules/jest-ld-mock",
     "lint": "eslint --ext ts,tsx,js,jsx src",
     "test": "jest",
     "build-publish": "npm run build && npm version patch -m 'Upgrade to %s' && npm publish && git push"
